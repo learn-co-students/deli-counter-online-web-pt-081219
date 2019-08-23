@@ -7,7 +7,7 @@ def line(array)
     array.each do |name|
      customers = "#{num}. #{name}"
      num += 1 
-     array << customers
+     katz_deli << customers
    end
      puts "The line is currently: #{katz_deli.join(" ")}"
  end
