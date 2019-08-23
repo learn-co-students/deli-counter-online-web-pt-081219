@@ -1,15 +1,15 @@
 def line(array)
-  katz_deli = []
   if array.length == 0 
     puts "The line is currently empty."
   else
+    current_line = "The line is currently:"
     num = 1 
     array.each do |name|
-     customers = "#{num}. #{name}"
+     customers = " #{num}. #{name}"
      num += 1 
-     katz_deli << customers
+     current_line << customers
    end
-     puts "The line is currently: #{katz_deli.join(" ")}"
+     puts current_line
  end
 end
 
